@@ -1,0 +1,13 @@
+
+
+
+var ss = SpreadsheetApp.openById('1rtEIHl2RUCghgX2FfYB03wQ9TESi2DeezThMgH9oUVs');
+var sheet = ss.getSheetByName('mysheet');
+function doGet(e){
+ var read = e.parameter.read;
+ if (read !== undefined)
+ {
+ var A1= ContentService.createTextOutput(sheet.getRange("A1:A10").getValues());
+ return (A1);
+ }
+}
