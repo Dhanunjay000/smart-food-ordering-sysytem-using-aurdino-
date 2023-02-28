@@ -1,7 +1,7 @@
 
 
 
-var ss = SpreadsheetApp.openById('1rtEIHl2RUCghgX2FfYB03wQ9TESi2DeezThMgH9oUVs');
+var ss = SpreadsheetApp.openById('******************spreadsheet id***********88');
 var sheet = ss.getSheetByName('mysheet');
 function doGet(e){
  var read = e.parameter.read;
